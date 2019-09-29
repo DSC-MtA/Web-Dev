@@ -149,7 +149,7 @@ If you want to get more creative, many free icons can be imported from libraries
 ```
   </main>
   <footer>
-    <p>&copy; 2019 Shmorg Shmorg and the Graeminator.<p>
+    <p>&copy; 2019 Shmorg Shmorg and the Graeminator.</p>
   </footer>
 </html>
 ```
