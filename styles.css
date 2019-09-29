@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* GLOBAL */
+* {
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #DB4437;
+  color: #FFF;
+  padding: 70px 10% 10px 10%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px;
+}
+
+li a:hover {
+  font-weight: 700;
+  border-bottom: 2px solid #FFF;
+}
+
+/* FLEXBOX */
+
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-bw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CONTENT */
+main {
+  padding: 25px 10%;
+}
+
+p {
+  padding: 10px 0;
+}
+
+/* ASSETS */
+img.img-full-width {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER  */
+footer {
+  padding: 10px 10%;
+  background-color: #DB4437;
+  color: #FFF;
+}
+
+footer p {
+  padding: 0;
+  text-align: center;
+}
