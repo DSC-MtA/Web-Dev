@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /* GLOBAL */
 * {
-  /* font-family: "PT Sans", sans-serif; */
   font-family: "Raleway", sans-serif;
 }
 
@@ -11,7 +9,16 @@ body {
   margin: 0;
 }
 
-/* HEADER */
+/* CONTENT */
+main {
+  padding: 25px 10%;
+}
+
+p {
+  padding: 10px 0;
+}
+
+/* MENU  */
 header {
   background-color: #DB4437;
   color: #FFF;
@@ -39,32 +46,21 @@ li a:hover {
 }
 
 /* FLEXBOX */
+@media screen and (min-width: 551px) {
+  .flex-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-.flex-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  .flex-bw {
+    align-items: center;
+  }
 }
 
 .flex-bw {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-/* CONTENT */
-main {
-  padding: 25px 10%;
-}
-
-p {
-  padding: 10px 0;
-}
-
-/* ASSETS */
-img.img-full-width {
-  width: 100%;
-  height: auto;
 }
 
 /* FOOTER  */
@@ -77,4 +73,61 @@ footer {
 footer p {
   padding: 0;
   text-align: center;
+}
+
+/* ASSETS */
+img.img-full-width {
+  width: 60%;
+  margin: 0 20%;
+  height: auto;
+}
+
+.rotate-anim {
+  animation: rotate-360 2s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mobile-ham {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .closed nav ul {
+    display: none;
+  }
+
+  .open nav ul {
+    display: block;
+    font-size: 20px;
+  }
+
+  #mobile-ham {
+    display: block;
+    font-size: 70px;
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    margin: 20px;
+  }
+
+  #mobile-ham:hover {
+    cursor: pointer;
+  }
+
+  .open.flex-bw {
+    flex-direction: column;
+  }
+
 }
